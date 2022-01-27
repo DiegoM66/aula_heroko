@@ -1,0 +1,407 @@
+* {
+    background-color: #1c1c1c;
+}
+#page {
+    display: grid;
+    height: 894px;
+    grid-template-areas: "header header" "nav main";
+    grid-template-rows: 60px 1fr 0px;
+    grid-auto-columns: 170px 1fr;
+    justify-content: center;
+}
+#page>header {
+    grid-area: header;
+    background-color: #1c1c1c;
+    border: 1px solid ;
+    border-color: deepskyblue deeppink azure deepskyblue;
+}
+#page>nav {
+    grid-area: nav;
+    background-color: #1c1c1c;
+    border: 1px solid;
+    border-color: azure azure deeppink deepskyblue;
+    list-style: none;
+    text-decoration: none;
+}
+#page>main{
+    grid-area: main;
+    background-color: #1c1c1c;
+    border: 1px solid;
+    border-color: azure deeppink deeppink azure;
+    list-style: none;
+}
+h1 {
+    color: azure;
+    background-color: #1c1c1c;
+    text-align: center;
+}
+div.imgsmeio {
+    max-width: 150px;
+    min-width: 100px;
+}
+#logo {
+    width: 200px;
+    height: 200px;
+    margin-left: 32%;
+}
+#divBusca{
+    background-color: azure;
+    border:solid 1px;
+    border-radius:15px;
+    width: 300px;
+    position: absolute;
+    top: 2.5%;
+    left: 2%;
+  }
+  
+#busca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+    color: black;
+}
+#img1 {
+    width: 25px;
+    height: 25px;
+    background-color: azure;
+    margin-top: 1%;
+}
+#navopcoes {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+#lista {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-left: 10%;
+    list-style: none;
+}
+a:link{
+    text-decoration: none!important;
+  }
+a:hover {
+    background: -webkit-linear-gradient(-0.2turn, deepskyblue, deeppink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#emAlta {
+    color: azure; 
+    margin-left: 20%;  
+    list-style: none;
+}
+.icones {
+    width: 15px;
+    height: 15px;
+    color: azure;
+    text-decoration: none;
+}
+.navimgs{
+    list-style: none;
+    margin-left: 20%;
+}
+#img2 {
+    width: 100px;
+    height: 150px;
+    border: 1px solid;
+    border-color: deepskyblue deeppink deeppink deepskyblue;
+    margin-top: 8px;
+}
+.epsnovos {
+    color: azure; 
+    margin-left: 20%;
+}
+.fim {
+    display: none;
+    color: azure; 
+    font-size: 15px;
+    text-align: center;
+    background: -webkit-linear-gradient(-0.5turn, deepskyblue, deeppink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.maisassistidos {
+    color: azure; 
+    margin-left: 20%;
+    margin-top: 30%;
+}
+#setae {
+    width: 40px;
+    height: 40px;
+    margin-top: 90px;
+}
+#setad {
+    width: 40px;
+    height: 40px;
+    margin-top: 90px;
+}
+#setae2 {
+    width: 40px;
+    height: 40px;
+    margin-top: 90px;
+}
+#setad2 {
+    width: 40px;
+    height: 40px;
+    margin-top: 90px;
+}
+#img3 {
+    width: 150px;
+    height: 225px;
+    border: 2px solid;
+    border-color: deepskyblue deeppink deeppink deepskyblue;
+}
+.img3 {
+    float: left;
+    width: 1/4 * 100%;
+    margin-left: 10px;
+}
+.cima::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.img4{
+    float: left;
+    width: 1/7 * 100%;
+    margin-bottom: 5%;
+    margin-left: 10px;
+}
+.baixo::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#img4 {
+    width: 150px;
+    height: 225px;
+    border: 2px solid;
+    border-color: deepskyblue deeppink deeppink deepskyblue;
+}
+#img5 {
+    width: 150px;
+    height: 225px;
+    border: 2px solid;
+    border-color: deepskyblue deeppink deeppink deepskyblue;
+}
+#img6 {
+    width: 150px;
+    height: 225px;
+    border: 2px solid;
+    border-color: deepskyblue deeppink deeppink deepskyblue;
+}
+#img7 {
+    width: 150px;
+    height: 225px;
+    border: 2px solid;
+    border-color: deepskyblue deeppink deeppink deepskyblue;
+}
+#verMais {
+    display: none;
+    color: azure;
+    background-color: #1c1c1c;
+    border-color: deepskyblue deeppink deeppink deepskyblue;
+}
+#verMais:hover {
+    background-image: linear-gradient(-0.2turn, deeppink, deepskyblue);
+}
+@media only screen and (max-width: 1100px) {
+    #page {
+        grid-template-areas: "header header" "nav nav" "main main";
+        height: 1000px;
+        grid-template-rows: none;
+        grid-auto-columns: none;
+        }
+        #page>header {
+            grid-area: header;
+        }
+        #page>nav {
+            grid-area: nav;
+            height: 250px;
+            border: 1px solid;
+            border-color: azure deeppink azure deepskyblue;
+        }
+        #page>main {
+            grid-area: main;
+            height: 105%;
+            border: 1px solid;
+            border-color: azure deeppink deeppink deepskyblue;
+        }
+    #emAlta {
+        position: relative;
+        top: -220px;
+        left: 30%;
+        width: 200px;
+    }
+    .navimgs {
+        position: relative;
+        top: -85%;
+        left: 30%;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    #img6 {
+        display: none;
+    }
+    #img7 {
+        display: none;
+    }
+    .img4 {
+        display: inline;
+        position: relative;
+        top: 5px;
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+    }
+    #logo {
+        width: 150px;
+        height: 150px;
+        margin: 0;
+    }
+    .logo {
+        text-align: center;
+    }
+    .maisassistidos {
+        margin-top: 60%;
+    }
+    #divBusca{
+        width: 175px;
+    }
+    #busca {
+        font-size: 12px;
+        width: 130px;
+    }
+    #lista {
+        margin: 0;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 626px) {
+    #img5 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 545px) {
+    #img2 {
+        width: 75px;
+        height: 112.5px;
+    }
+    #page>header {
+        height: 100px;
+    }
+    #divBusca {
+        position: relative;
+        top: -5px;
+    }
+}
+@media only screen and (max-width: 461px) {
+    .img3 {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .img4 {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    #setae {
+        display: none;
+    }
+    #setad {
+        display: none;
+    }
+    #setae2 {
+        display: none;
+    }
+    #setad2 {
+        display: none;
+    }
+    .fim {
+        display: block;
+    }
+    .maisassistidos {
+        margin-top: 30%;
+    }
+    #img3 {
+        margin-top: 5px;
+    }
+    #img4 {
+        margin-top: 5px;
+    }
+    #img5{
+        display: inline-block;
+        margin-top: 5px;
+    }
+    #img6{
+        display: inline-block;
+        margin-top: 5px;
+    }
+    #img7{
+        display: inline-block;
+        margin-top: 5px;
+    }
+    #verMais {
+        display: inline-block;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 432px) {
+    #img2 {
+        width: 50px;
+        height: 75px;
+    }
+    #emAlta {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100px;
+        left: 55%;
+        top: -200px;
+    }
+    .navimgs {
+        position: relative;
+        left: 130px;
+        top: -170px;
+        margin-left: 5px;
+    }
+    @media only screen and (max-width: 360px) {
+        #img2 {
+            width: 45px;
+            height: 67.5px;
+        }
+        .navimgs {
+            display: block;
+            margin: 0;
+            position: relative;
+            top: -230px;
+            left: 220px;
+            width: 10px;
+            height: 80px;
+        }
+        #emAlta {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 100px;
+            left: 45%;
+            top: -200px;
+        }
+    }
+    @media only screen and (max-width: 305px) {
+        .navimgs {
+            left: 190px;
+        }
+    }
+}
