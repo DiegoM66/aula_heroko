@@ -47,7 +47,7 @@
                 <br>
                 <li id="lista">
                     <img src="img/icones/sair-g.png" class="icones">
-                    <a href="login.html">Sair</a>
+                    <a href="/">Sair</a>
                 </li>
             </ul>
             <li>
